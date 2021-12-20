@@ -1,19 +1,19 @@
 ---
 # tasks file for dotmjs.gnome_touchpad_tweaks
- - name: Disable touchpad natural scrolling
-    dconf:
-      key: "/org/gnome/desktop/peripherals/touchpad/natural-scroll"
-      value: "false"
-      state: present
+- name: Disable touchpad natural scrolling
+  dconf:
+    key: "/org/gnome/desktop/peripherals/touchpad/natural-scroll"
+    value: "false"
+    state: present
 
-  - name: Enable tap-to-click
-    dconf:
-      key: "/org/gnome/desktop/peripherals/touchpad/tap-to-click"
-      value: "true"
-      state: present
-    
-  - name: Enable two finger scrolling
-    dconf:
-      key: "/org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled"
-      value: "true"
-      state: present
+- name: Enable tap-to-click
+  dconf:
+    key: "/org/gnome/desktop/peripherals/touchpad/tap-to-click"
+    value: "true"
+    state: present
+
+- name: Enable two finger scrolling
+  dconf:
+    key: "/org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled"
+    value: "true"
+    state: present
